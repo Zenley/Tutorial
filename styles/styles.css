@@ -1,25 +1,330 @@
-/* Using a sans serif font and increasing the size of the characters */
-body {
-    font-family: sans-serif;
-    font-size: 20px;
+:root{
+    --strong-red:#d41443;
 }
 
-/* Shift the heading text to the left, by default it is centered */
-table caption {
-    text-align: left;
+li{
+    list-style: none;
 }
 
-/* We "collapse" the frames of adjacent cells */
-table {
-    border-collapse: collapse;
+.popup {
+    display: none;
 }
 
-/* 
-  Add a border and padding to the cells, the distance from the content to the border.
-  To control the vertical position, the caption-side property is used.
-*/
-table th,
-table td {
-    padding: 10px;
-    border: 1px solid #2a2a2a;
+.open-popup{
+    display: block;
+}
+
+.container-ice{
+    background-color: #fea5bb;
+    max-width: 500px;
+    height: 700px;
+    background-image: url(../image/360_F_531563811_yMxKF5jJdL27ga24qotln5EDUKKlEnBF.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+}
+
+.modal-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ice-cream-story{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.ice-cream-story p{
+    margin-top: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(212, 20, 67, 0.4);
+    border-radius: 15px;
+    text-align: center;
+    padding: 0 10px;
+    margin-bottom: -10px;
+}
+
+.modal-title h2{
+    margin-bottom: 0px;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: rgba(212, 20, 67, 0.4);
+    border-radius: 15px;
+    padding: 0 10px;
+}
+
+
+.hiddenbutton{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.ic-btn{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+
+.story-ice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 10px;
+    border-radius: 15px;
+}
+
+
+.story-ice p{
+    color: white;
+    padding: 0 10px;
+    text-align: center;
+    border-radius: 15px;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(212, 20, 67, 0.4);
+}
+
+.story-ice ul{
+color: white;
+    padding: 0 10px;
+    text-align: center;
+    border-radius: 15px;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(212, 20, 67, 0.4);
+}
+
+/* COFFEE BEAN */
+
+.container-coffee {
+    background-color: #fea5bb;
+    max-width: 500px;
+    height: 700px;
+    background-image: url(../image/coffee-beans-dark-background-top-view-coffee-concept.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.modal-title-coffee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coffee-story {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.coffee-story p {
+    margin-top: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(94, 54, 28, 0.6);
+    border-radius: 15px;
+    text-align: center;
+    padding: 0 10px;
+    margin-bottom: -10px;
+}
+
+.modal-title-coffee h2 {
+    margin-bottom: 0px;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(94, 54, 28, 0.6);
+    border-radius: 15px;
+    padding: 0 10px;
+}
+
+
+
+.hiddenbutton {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.bean-btn {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+
+.story-bean {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 10px;
+    border-radius: 15px;
+}
+
+
+.story-bean p {
+    color: white;
+    padding: 0 10px;
+    text-align: center;
+    border-radius: 15px;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(94, 54,28, 0.6);
+}
+
+.story-bean ul {
+    color: white;
+    padding: 0 10px;
+    text-align: center;
+    border-radius: 15px;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(94, 54, 28, 0.6);
+}
+
+/* MILKSHAKE */
+
+.container-milkshake {
+    background-color: #c2e297;
+    max-width: 500px;
+    height: 700px;
+    background-image: url(../image/green.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.modal-title-milkshake {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.milkshake-story {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.milkshake-story p {
+    margin-top: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(56, 73, 34, 0.4);
+    border-radius: 15px;
+    text-align: center;
+    padding: 0 10px;
+    margin-bottom: -10px;
+}
+
+.modal-title-milkshake h2 {
+    margin-bottom: 0px;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(56, 73, 34, 0.4);
+    border-radius: 15px;
+    padding: 0 10px;
+}
+
+
+.hiddenbutton {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.shake-btn {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+
+.story-shake {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 10px;
+    border-radius: 15px;
+}
+
+
+.story-shake p {
+    color: white;
+    padding: 0 10px;
+    text-align: center;
+    border-radius: 15px;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(56, 73, 34, 0.4);
+}
+
+.story-shake ul {
+    color: white;
+    padding: 0 10px;
+    text-align: center;
+    border-radius: 15px;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(56, 73, 34, 0.4);
+}
+
+/* MEDIA SCREEN */
+
+@media screen and (max-width:479px) {
+    .modal-title {
+            visibility: hidden;
+        }
+    
+        .ice-cream-story {
+            margin-top: -40px;
+            padding-top: 0px;
+        }
+    
+        .modal-title-coffee {
+            visibility: hidden;
+        }
+    
+        .coffee-story {
+            margin-top: -40px;
+            padding-top: 0px;
+        }
+    
+        .modal-title-milkshake {
+            visibility: hidden;
+        }
+    
+        .milkshake-story {
+            margin-top: -40px;
+            padding-top: 0px;
+        }
 }
